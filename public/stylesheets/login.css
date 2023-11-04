@@ -12,7 +12,7 @@
 
 body {
     margin: 0;
-    color: var(--color-4);
+    color: var(--color-1);
     font-family: Poppins;
     position: absolute;
     top: 50%;
@@ -105,19 +105,30 @@ input {
     margin: 0.2rem;
 }
 
+.login-form-input {
+    width: 90%;
+}
+
+.login-form-input input {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
 button {
     font-size: 1rem;
     background-color: #0a0a23;
-    color: var(--color-4);
+    color: var(--color-1);
     border: none;
     border-radius: 10px;
     padding: 15px;
     min-height: 30px;
     min-width: 120px;
+    transition: 0.3s;
 }
 
 .buttons-login-type .active {
     background-color: var(--color-5);
+    color: var(--color-4);
 }
 
 .quotes {
@@ -202,6 +213,6 @@ label {
 
 } */
 
-.display-none{
+.display-none {
     display: none;
 }
