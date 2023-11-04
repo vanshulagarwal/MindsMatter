@@ -159,7 +159,7 @@ label {
     display: none;
 } */
 
-#loginForm,
+/* #loginForm, */
 label {
     display: none;
 }
@@ -201,3 +201,7 @@ label {
     }
 
 } */
+
+.display-none{
+    display: none;
+}

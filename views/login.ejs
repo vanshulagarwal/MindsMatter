@@ -45,8 +45,8 @@
                 <p class="welcome">We are glad to see you back with us</p>
             </div>
             <div class="buttons-login-type">
-                <button class="login" name="login">Login</button>
-                <button class="reg active" name="reg">Register</button>
+                <button class="login active" name="login">Login</button>
+                <button class="reg" name="reg">Register</button>
             </div>
             <!-- </div> -->
             <form id="loginForm" action="/login" method="POST">
@@ -60,7 +60,7 @@
                 </div>
                 <button class="submit-btn">LogIn</button>
             </form>
-            <form id="registerForm" action="/register" method="POST">
+            <form id="registerForm" class="display-none" action="/register" method="POST">
                 <div class="input-div">
                     <label for="firstname">Fname:</label>
                     <input type="text" name="firstname" id="firstname" class="input-group" placeholder="firstname">
@@ -88,6 +88,7 @@
 
 
     </div>
+    <script src="/javascripts/login.js"></script>
 </body>
 
 </html>
