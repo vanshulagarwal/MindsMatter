@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <title>Minds Matter</title>
+</head>
+
+<body>
+    <!-- <div class="quotes">
+        <p class="quote" id="q1">
+            "Break the Stigma,<br>and Find Your Way"
+        </p>
+        <p class="quote" id="q2">
+            "Mental health matters,<br>let's shatter the silence"
+        </p>
+        <p class="quote" id="q3">
+            "Embrace your mind,<br>be kind"
+        </p>
+        <p class="quote" id="q4">
+            "Like you,<br>the day is bright"
+        </p>
+        <p class="quote" id="q5">
+            "It's okay<br>not to be okay"
+        </p>
+        <p class="quote" id="q6">
+            "You are not<br>your mental illness"
+        </p>
+    </div> -->
+    <div class="full-body">
+
+        <main class="card">
+            <div class="upper">
+                <h1>MINDS MATTER</h1>
+                <h2>WELCOME</h2>
+                <p class="welcome">We are glad to see you back with us</p>
+            </div>
+            <div class="buttons-login-type">
+                <button class="login" name="login">Login</button>
+                <button class="reg active" name="reg">Register</button>
+            </div>
+            <!-- </div> -->
+            <form id="loginForm" action="/login" method="POST">
+                <div class="input-div">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" class="input-group" placeholder="username">
+                </div>
+                <div class="input-div">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" class="input-group" placeholder="password">
+                </div>
+                <button class="submit-btn">LogIn</button>
+            </form>
+            <form id="registerForm" action="/register" method="POST">
+                <div class="input-div">
+                    <label for="firstname">Fname:</label>
+                    <input type="text" name="firstname" id="firstname" class="input-group" placeholder="firstname">
+                </div>
+                <div class="input-div">
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" name="lastname" id="lastname" class="input-group" placeholder="lastname">
+                </div>
+                <div class="input-div">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="input-group" placeholder="email">
+                </div>
+                <div class="input-div">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" class="input-group" placeholder="username">
+                </div>
+                <div class="input-div">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" class="input-group" placeholder="password">
+                </div>
+                <button class="submit-btn">Register</button>
+            </form>
+        </main>
+
+
+
+    </div>
+</body>
+
+</html>
