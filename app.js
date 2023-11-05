@@ -4,7 +4,8 @@ const path = require('path');
 const session = require('express-session');
 const flash = require('connect-flash');
 const userRoutes = require('./routes/users');
-const User=require('./models/user');
+const User = require('./models/user');
+const requireChanges = require('./detectChanges')
 
 
 const app = express();
@@ -34,7 +35,7 @@ app.use(session(sessionConfig));
 app.use(flash());
 
 app.use((req, res, next) => {
-    res.locals.user_id=req.session.user_id;
+    res.locals.user_id = req.session.user_id;
     res.locals.success = req.flash('success');
     res.locals.error = req.flash('error');
     next();
@@ -49,31 +50,39 @@ app.use(express.static(path.join(__dirname, 'public')))
 //     const changeStream = User.watch().on('change', data => console.log('changed',data));
 // })
 
-app.get('/', (req, res, next) => {
+const isLoggedIn = (req, res, next) => {
+    if (!req.session.user_id) {
+        req.flash('success', 'You need to Signed in first');
+        return res.redirect('/login');
+    }
+    next();
+};
+
+app.get('/', isLoggedIn, (req, res, next) => {
     res.render('home');
 })
 
 app.use('/', userRoutes);
 
-app.get('/analysis',(req,res,next)=>{
+app.get('/analysis', isLoggedIn, (req, res, next) => {
     res.render('analysis');
 })
 
-app.post('/analysis',(req,res,next)=>{
+app.post('/analysis', isLoggedIn, (req, res, next) => {
     // res.send(req.body);
     // const changeStream = User.watch().on('change', data => console.log(data));
 })
 
-app.get('/bookasession',(req,res,next)=>{
+app.get('/bookasession', isLoggedIn, (req, res, next) => {
     res.render('bookasession');
 })
 
-app.post('/bookasession',(req,res,next)=>{
+app.post('/bookasession', isLoggedIn, (req, res, next) => {
     // res.send(req.body);
     // const changeStream = User.watch().on('change', data => console.log(data));
 })
 
-app.get('/faqs',(req,res,next)=>{
+app.get('/faqs', isLoggedIn, (req, res, next) => {
     res.render('faqs');
 })
 

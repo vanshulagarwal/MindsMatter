@@ -1,5 +1,6 @@
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
+const changeStream=require('../detectChanges');
 
 module.exports.registerUser = async (req, res, next) => {
     const { username, password, email, firstname, lastname } = req.body;

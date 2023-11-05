@@ -45,11 +45,10 @@ body {
     font-weight: bold;
     box-sizing: border-box;
     padding: 30px 20px;
-    cursor: pointer;
     width: 100%;
     transition: background-color 0.3s;
     font-size: large;
-    background-color: #f3effe;
+    background-color: #7a9e9f;
     border-radius: 8px;
     height: 3.5rem;
     display: flex;
@@ -57,9 +56,9 @@ body {
     align-items: center;
 }
 
-.faq__question:hover {
+/* .faq__question:hover {
     background-color: #e0e0e0;
-}
+} */
 
 .faq__answer {
     padding: 20px 20px;
@@ -79,6 +78,7 @@ body {
 
 .faq__button {
     position: relative;
+    cursor: pointer;
 }
 
 .faq__answer-0,
