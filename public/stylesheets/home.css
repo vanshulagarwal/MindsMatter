@@ -6,6 +6,9 @@
     --color-5: #fe5f55;
 }
 
+.home-body{
+    display: flex;
+}
 
 h2 {
     font-size: 3rem;
@@ -19,6 +22,7 @@ h2 {
 
 .container.eve {
     max-width: 100%;
+    min-width: 30%;
     left: 0%;
     width: 30%;
     height: 100vh;
@@ -69,7 +73,15 @@ h2 {
     background-color: #fff;
 }
 
+.graph{
+    width: 800px;
+    padding: 4rem;
+}
+
 @media only screen and (max-width: 768px) {
+    .home-body{
+        flex-wrap: wrap;
+    }
     .nav-menu {
         position: fixed;
         top: -100%;
@@ -109,6 +121,9 @@ h2 {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .container.eve{
+        width: 100%;
+    }
     .container.eve h1 {
         font-size: 18px;
     }
