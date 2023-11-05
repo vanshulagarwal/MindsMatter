@@ -1,0 +1,28 @@
+.flash-container{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 150px;
+    padding: 10px;
+    transition:all 0.2s ease-in-out;
+    z-index: 2000;
+}
+.flash{
+    opacity: 1;
+    padding: 20px;    
+}
+
+.flash-success{
+    background-color: #a9f5c3;
+    border: 1px solid #418a5a;
+    color: #418a5a;
+}
+
+.flash-error{
+    background-color: red;
+    color: white;
+}

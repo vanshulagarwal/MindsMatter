@@ -45,9 +45,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use((req,res,next)=>{
-    const changeStream = User.watch().on('change', data => console.log('changed',data));
-})
+// app.use((req,res,next)=>{
+//     const changeStream = User.watch().on('change', data => console.log('changed',data));
+// })
 
 app.get('/', (req, res, next) => {
     res.render('home');
@@ -61,7 +61,20 @@ app.get('/analysis',(req,res,next)=>{
 
 app.post('/analysis',(req,res,next)=>{
     // res.send(req.body);
-    const changeStream = User.watch().on('change', data => console.log(data));
+    // const changeStream = User.watch().on('change', data => console.log(data));
+})
+
+app.get('/bookasession',(req,res,next)=>{
+    res.render('bookasession');
+})
+
+app.post('/bookasession',(req,res,next)=>{
+    // res.send(req.body);
+    // const changeStream = User.watch().on('change', data => console.log(data));
+})
+
+app.get('/faqs',(req,res,next)=>{
+    res.render('faqs');
 })
 
 const handleValidationErr = err => {

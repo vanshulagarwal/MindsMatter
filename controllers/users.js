@@ -47,5 +47,5 @@ module.exports.loginUser = async (req, res, next) => {
 module.exports.logoutUser = (req, res, next) => {
     req.session.user_id = null;
     req.flash('success', 'Successfully Logged Out');
-    res.redirect('/');
+    res.redirect('/login');
 }

@@ -1,0 +1,199 @@
+:root {
+    --color-1: #b8d8d8;
+    --color-2: #7a9e9f;
+    --color-3: #4f6367;
+    --color-4: #eef5db;
+    --color-5: #fe5f55;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins;
+    background-color: var(--color-2);
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: var(--color-3);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    z-index: 5;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--color-1);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-1);
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: var(--color-1);
+}
+
+.container.eve {
+    max-width: 600px;
+    width: 30%;
+    height: 100vh;
+    padding: 20px;
+    background-color: var(--color-1);
+}
+
+.container.eve h1 {
+    display: inline-block;
+    margin: 1rem auto;
+    margin-left: 8%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+.event {
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 80%;
+}
+
+.event h2,
+.event p,
+.event .bookBtn {
+    margin: 2%;
+}
+
+.bookBtn {
+    background-color: var(--color-3);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.confirmation {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        z-index: 0;
+        flex-direction: column;
+        background-color: var(--color-2);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        top: 5rem;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .container.eve h1 {
+        font-size: 18px;
+    }
+
+    .container.eve h2 {
+        font-size: 14px;
+    }
+
+    .bookBtn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .bookBtn {
+        font-size: 8px;
+    }
+}

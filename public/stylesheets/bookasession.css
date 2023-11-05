@@ -1,0 +1,47 @@
+:root {
+    --color-1: #b8d8d8;
+    --color-2: #7a9e9f;
+    --color-3: #4f6367;
+    --color-4: #eef5db;
+    --color-5: #fe5f55;
+}
+
+::placeholder {
+    font-family: Poppins;
+}
+
+.bookasession {
+    font-family: Poppins;
+    background-color: var(--color-2);
+    color: var(--color-3);
+}
+
+label,
+h2 {
+    color: var(--color-1);
+}
+
+.form-group input {
+    height: 100%;
+}
+
+.form-group .btn-form {
+    background: var(--color-3);
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+.form-group,
+.btn-form {
+    font-size: 1.5rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.col-md-6 {
+    max-width: 40%;
+}
