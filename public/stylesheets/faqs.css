@@ -33,7 +33,7 @@ body {
 
 .faq {
     margin: 10px 0;
-    width: 100%;
+    width: 80%;
     background-color: #f7f7f7;
 }
 
@@ -63,7 +63,7 @@ body {
 
 .faq__answer {
     padding: 20px 20px;
-    background-color: #f3effe;
+    background-color: #35313f;
     width: 80%;
     text-align: justify;
     display: none;
@@ -79,6 +79,14 @@ body {
 
 .faq__button {
     position: relative;
+}
+
+.faq__answer-0,
+.faq__answer-1,
+.faq__answer-2,
+.faq__answer-3 {
+    font-size: 1.5rem;
+    padding: 2rem;
 }
 
 @media (max-width: 768px) {

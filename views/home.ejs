@@ -14,26 +14,27 @@
 </head>
 
 <%- include('./flash') %>
-<body>
-    <%- include('./navbar') %>
-    <div class="container eve">
-        <h1>Upcoming Mental Health Events</h1>
-        <div class="event" id="event1">
-            <h2>Event 1</h2>
-            <p>Date: November 10, 2023</p>
-            <button class="bookBtn" onclick="bookSession('event1')">Book Now</button>
-        </div>
-        <div class="event" id="event2">
-            <h2>Event 2</h2>
-            <p>Date: November 15, 2023</p>
-            <button class="bookBtn" onclick="bookSession('event2')">Book Now</button>
-        </div>
-        <div class="confirmation" id="confirmation" style="display:none;"></div>
-    </div>
+
+    <body>
+        <%- include('./navbar') %>
+            <div class="container eve">
+                <h1>Upcoming Mental Health Events</h1>
+                <div class="event" id="event1">
+                    <h2>Event 1</h2>
+                    <p>Date: November 10, 2023</p>
+                    <button class="bookBtn" onclick="bookSession('event1')">Book Now</button>
+                </div>
+                <div class="event" id="event2">
+                    <h2>Event 2</h2>
+                    <p>Date: November 15, 2023</p>
+                    <button class="bookBtn" onclick="bookSession('event2')">Book Now</button>
+                </div>
+                <div class="confirmation" id="confirmation" style="display:none;"></div>
+            </div>
 
 
-    <script src="/javascripts/home.js"></script>
-    <script src="/javascripts/flash.js"></script>
-</body>
+            <script src="/javascripts/home.js"></script>
+            <script src="/javascripts/flash.js"></script>
+
 
 </html>
