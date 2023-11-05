@@ -30,6 +30,8 @@ Additionally, incorporating natural language processing techniques and sentiment
 
 Furthermore, establishing partnerships with mental health organizations and institutions would facilitate the collection of more extensive and diverse datasets, ultimately leading to a more comprehensive and effective tool for mental health assessment. Through continuous refinement and collaboration, we aspire to make a meaningful impact on mental well-being in today's society.
 
+## [PPT Link](https://www.canva.com/design/DAFyJUZOWFU/4SWgn95jvBRKoyU_seyB1g/edit)
+
 ## Team Members (#HashItOut - 6001)
 
 1. **Shivansh Kinra**
