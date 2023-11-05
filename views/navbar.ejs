@@ -1,5 +1,5 @@
 <nav class="navbar">
-    <a href="/" class="nav-logo">Minds Master</a>
+    <a href="/" class="nav-logo">Minds Matter</a>
     <ul class="nav-menu">
         <li class="nav-item">
             <a href="/" class="nav-link">Home</a>
@@ -14,14 +14,14 @@
             <a href="/faqs" class="nav-link">FAQ</a>
         </li>
     </ul>
-        <div class="navcontent">
-            <% if(!user_id) { %>
+    <div class="navcontent">
+        <% if(!user_id) { %>
             <!-- <a href="/register"><button class="nav-button">Register</button></a> -->
             <a href="/login"><button class="nav-button login-btn">SignUp / In</button></a>
             <% } else {%>
-            <a href="/logout"><button class="nav-button logout-btn">Logout</button></a>
-            <% } %>
-        </div>
+                <a href="/logout"><button class="nav-button logout-btn">Logout</button></a>
+                <% } %>
+    </div>
     <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>

@@ -5,57 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frequently Asked Questions</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
     <link rel="stylesheet" href="/stylesheets/faqs.css">
 </head>
 
 <body>
-    <div class="container-faq" id="faq">
-        <h2 class="faq-heading">Frequently Asked Questions</h2>
-        <div class="accordion">
-            <div class="faq">
-                <div class="faq__question">
-                    What is anxiety?
-                    <button class="faq__button font-bold"><span class="text-3xl">+</span></button>
+    <%- include('./navbar') %>
+        <div class="container-faq" id="faq">
+            <h2 class="faq-heading">Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="faq">
+                    <div class="faq__question">
+                        What is anxiety?
+                        <button class="faq__button font-bold"><span class="text-3xl">+</span></button>
+                    </div>
+                    <div class="faq__answer-0 hidden">Anxiety is a normal emotion that everyone experiences.
+                        However, an
+                        anxiety disorder involves excessive, persistent worry or fear that can interfere with daily
+                        life.
+                    </div>
                 </div>
-                <div class="faq__answer-0 hidden">Anxiety is a normal emotion that everyone experiences. However, an
-                    anxiety disorder involves excessive, persistent worry or fear that can interfere with daily life.
+                <div class="faq">
+                    <div class="faq__question">
+                        What is depression?
+                        <button class="faq__button font-bold"><span class="text-3xl">+</span></button>
+                    </div>
+                    <div class="faq__answer-1 hidden">Depression is a mood disorder characterized by persistent feelings
+                        of
+                        sadness, loss of interest or pleasure in activities, and other symptoms that can impact daily
+                        functioning.
+                    </div>
                 </div>
-            </div>
-            <div class="faq">
-                <div class="faq__question">
-                    What is depression?
-                    <button class="faq__button font-bold"><span class="text-3xl">+</span></button>
-                </div>
-                <div class="faq__answer-1 hidden">Depression is a mood disorder characterized by persistent feelings of
-                    sadness, loss of interest or pleasure in activities, and other symptoms that can impact daily
-                    functioning.
-                </div>
-            </div>
-            <div class="faq">
-                <div class="faq__question">
-                    What is self-care in relation to mental health?
-                    <button class="faq__button font-bold"><span class="text-3xl">+</span></button>
-                </div>
-                <div class="faq__answer-2 hidden">Self-care involves taking deliberate actions to maintain and improve
-                    one's physical, emotional, and mental well-being. It can include activities like exercise,
-                    relaxation techniques, and spending time on hobbies
+                <div class="faq">
+                    <div class="faq__question">
+                        What is self-care in relation to mental health?
+                        <button class="faq__button font-bold"><span class="text-3xl">+</span></button>
+                    </div>
+                    <div class="faq__answer-2 hidden">Self-care involves taking deliberate actions to maintain and
+                        improve
+                        one's physical, emotional, and mental well-being. It can include activities like exercise,
+                        relaxation techniques, and spending time on hobbies
 
+                    </div>
                 </div>
+                <div class="faq">
+                    <div class="faq__question">
+                        What is therapy or counseling?
+                        <button class="faq__button font-bold"><span class="text-3xl">+</span></button>
+                    </div>
+                    <div class="faq__answer-3 hidden">Therapy or counseling is a process where individuals talk to a
+                        trained
+                        mental health professional about their thoughts, feelings, and behaviors. It aims to help them
+                        understand and manage their emotions better.
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
             </div>
-            <div class="faq">
-                <div class="faq__question">
-                    What is therapy or counseling?
-                    <button class="faq__button font-bold"><span class="text-3xl">+</span></button>
-                </div>
-                <div class="faq__answer-3 hidden">Therapy or counseling is a process where individuals talk to a trained
-                    mental health professional about their thoughts, feelings, and behaviors. It aims to help them
-                    understand and manage their emotions better.
-                </div>
-            </div>
-            <!-- Add more FAQ items as needed -->
         </div>
-    </div>
-    <script src="/javascripts/faqs.js"></script>
+        <script src="/javascripts/faqs.js"></script>
 </body>
 
 </html>
