@@ -1,11 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
-const bcrypt = require('bcrypt');
-const User = require('./models/user');
 const session = require('express-session');
 const flash = require('connect-flash');
 const userRoutes = require('./routes/users');
+const User=require('./models/user');
 
 
 const app = express();
@@ -46,11 +45,24 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')))
 
+app.use((req,res,next)=>{
+    const changeStream = User.watch().on('change', data => console.log('changed',data));
+})
+
 app.get('/', (req, res, next) => {
     res.render('home');
 })
 
 app.use('/', userRoutes);
+
+app.get('/analysis',(req,res,next)=>{
+    res.render('analysis');
+})
+
+app.post('/analysis',(req,res,next)=>{
+    // res.send(req.body);
+    const changeStream = User.watch().on('change', data => console.log(data));
+})
 
 const handleValidationErr = err => {
     console.log(err);
