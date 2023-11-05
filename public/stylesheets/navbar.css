@@ -32,6 +32,11 @@ nav a {
     border-bottom: 1px solid #E2E8F0;
 }
 
+.logo {
+    max-height: 80px;
+    max-width: 80px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
